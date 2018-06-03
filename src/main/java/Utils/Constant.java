@@ -12,6 +12,8 @@ import java.util.List;
  * @Version:        1.0
  */
 public class Constant {
+    //模型存放位置
+    public static String model_path = "models" ;
     //训练或者测试数据路径
     public static String path = "" ;
     //按照动作分类后的文件位置

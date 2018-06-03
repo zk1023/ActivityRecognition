@@ -5,6 +5,9 @@ import java.util.ArrayList;
 
 import ShapeletTransform.ShapeletTransform;
 import ShapeletTransform.MyInstance;
+import ShapeletTransform.Shapelet;
+import ShapeletTransform.ClusteredShapeletTransform;
+import ShapeletTransform.QualityMeasures;
 import Utils.Constant;
 import Utils.FileUtils;
 import com.opencsv.CSVWriter;
@@ -12,9 +15,9 @@ import weka.core.Instances;
 
 public class MultivariateShapelet {
     public static ShapeletTransform st;
-    public static ArrayList<ShapeletTransform.Shapelet> clusteredShapelets;
+    public static ArrayList<Shapelet> clusteredShapelets;
 
-    private static void writeShapelet(ArrayList<ShapeletTransform.Shapelet> clusteredShapelets, int a) throws IOException {
+    private static void writeShapelet(ArrayList<Shapelet> clusteredShapelets, int a) throws IOException {
         // TODO Auto-generated method stub
         // FileWriter writer = new FileWriter("shapelet.csv",true);
         CSVWriter writer = new CSVWriter(new FileWriter(Constant.filePath_shapelet, true));
@@ -50,7 +53,7 @@ public class MultivariateShapelet {
         if (maxLength < ShapeletTransform.DEFAULT_MINSHAPELETLENGTH)
             maxLength = ShapeletTransform.DEFAULT_MINSHAPELETLENGTH;
         st.setShapeletMinAndMax(minLength, maxLength);
-        st.setQualityMeasure(ShapeletTransform.QualityMeasures.ShapeletQualityChoice.F_STAT);
+        st.setQualityMeasure(QualityMeasures.ShapeletQualityChoice.F_STAT);
         //st.setLogOutputFile("ShapeletExampleLog.csv");
         Instances shapeletT = null;
         try {
@@ -68,7 +71,7 @@ public class MultivariateShapelet {
 
         int nosShapelets = (train.numAttributes() - 1) * train.numInstances() / Constant.clust_num;
         // System.out.println("noshapelets = "+nosShapelets);
-        ShapeletTransform.ClusteredShapeletTransform cst = new ShapeletTransform.ClusteredShapeletTransform(st, nosShapelets);
+        ClusteredShapeletTransform cst = new ClusteredShapeletTransform(st, nosShapelets);
         //System.out.println("----------"+st.shapelets.size());
         System.out.println(" Clustering down to " + nosShapelets + " Shapelets");
         System.out.println(" From " + st.getNumberOfShapelets() + " Shapelets");

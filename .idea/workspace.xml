@@ -2,161 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15d6143e-5dcd-4a24-b4a5-7a549d3ee8dd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/Act/1.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/Act/2.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/Act/3.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/Act/4.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/Act/5.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/Act/6.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/Act/7.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_0.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_1.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_10.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_11.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_12.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_13.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_14.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_15.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_16.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_17.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_2.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_3.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_4.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_5.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_6.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_7.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_8.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/1/sensor_9.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_0.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_1.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_10.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_11.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_12.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_13.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_14.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_15.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_16.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_17.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_2.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_3.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_4.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_5.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_6.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_7.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_8.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/2/sensor_9.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_0.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_1.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_10.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_11.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_12.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_13.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_14.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_15.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_16.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_17.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_2.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_3.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_4.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_5.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_6.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_7.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_8.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/3/sensor_9.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_0.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_1.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_10.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_11.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_12.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_13.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_14.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_15.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_16.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_17.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_2.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_3.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_4.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_5.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_6.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_7.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_8.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/4/sensor_9.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_0.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_1.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_10.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_11.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_12.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_13.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_14.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_15.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_16.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_17.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_2.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_3.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_4.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_5.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_6.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_7.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_8.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/5/sensor_9.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_0.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_1.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_10.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_11.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_12.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_13.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_14.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_15.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_16.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_17.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_2.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_3.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_4.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_5.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_6.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_7.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_8.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/6/sensor_9.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_0.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_1.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_10.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_11.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_12.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_13.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_14.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_15.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_16.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_17.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_2.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_3.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_4.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_5.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_6.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_7.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_8.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/7/sensor_9.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/hand_test.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DataSet/hand_train.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Predict/Predict.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Shapelet/MultivariateShapelet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ShapeletTransform/ClusteredShapeletTransform.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ShapeletTransform/MyInstance.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ShapeletTransform/OrderLineObj.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ShapeletTransform/QualityBound.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ShapeletTransform/QualityMeasures.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ShapeletTransform/Shapelet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ShapeletTransform/ShapeletTransform.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Train/Train.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/Train/Train.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/Utils/Constant.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/Utils/FileUtils.class" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ActivityRecognition.iml" afterPath="$PROJECT_DIR$/ActivityRecognition.iml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Preprocess/GetSeries.java" afterPath="$PROJECT_DIR$/src/main/java/Preprocess/GetSeries.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/FileUtils.java" afterPath="$PROJECT_DIR$/src/main/java/Utils/FileUtils.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Preprocess/GetSeries.class" afterPath="$PROJECT_DIR$/target/classes/Preprocess/GetSeries.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Shapelet/MultivariateShapelet.java" afterPath="$PROJECT_DIR$/src/main/java/Shapelet/MultivariateShapelet.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Train/Train.java" afterPath="$PROJECT_DIR$/src/main/java/Train/Train.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Predict/Predict.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Preprocess/GetSeries.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Test.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Train/Train.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utils/Constant.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utils/FileUtils.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -172,8 +28,8 @@
       <file leaf-file-name="MultivariateShapelet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Shapelet/MultivariateShapelet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="169" column="29" lean-forward="true" selection-start-line="169" selection-start-column="29" selection-end-line="169" selection-end-column="29" />
+            <state relative-caret-position="153">
+              <caret line="73" column="45" lean-forward="false" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,15 +37,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyInstance.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ShapeletTransform/MyInstance.java">
+      <file leaf-file-name="QualityMeasures.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ShapeletTransform/QualityMeasures.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-              <folding>
-                <element signature="e#374#375#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="175">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -197,8 +50,8 @@
       <file leaf-file-name="GetSeries.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Preprocess/GetSeries.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="181" column="39" lean-forward="true" selection-start-line="181" selection-start-column="39" selection-end-line="181" selection-end-column="39" />
+            <state relative-caret-position="3148">
+              <caret line="181" column="39" lean-forward="false" selection-start-line="181" selection-start-column="39" selection-end-line="181" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -219,8 +72,8 @@
       <file leaf-file-name="Constant.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Constant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-97">
-              <caret line="27" column="53" lean-forward="false" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+            <state relative-caret-position="262">
+              <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -229,8 +82,8 @@
       <file leaf-file-name="Train.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Train/Train.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="53" column="48" lean-forward="true" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+            <state relative-caret-position="116">
+              <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -276,10 +129,10 @@
         <option value="$PROJECT_DIR$/src/main/java/Shapelet/ShapeletTransform.java" />
         <option value="$PROJECT_DIR$/src/main/java/Shapelet/ClusteredShapeletTransform.java" />
         <option value="$PROJECT_DIR$/src/main/java/ShapeletTransform/ClusteredShapeletTransform.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Utils/Constant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Train/Train.java" />
         <option value="$PROJECT_DIR$/src/main/java/Preprocess/GetSeries.java" />
         <option value="$PROJECT_DIR$/src/main/java/ShapeletTransform/MyInstance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utils/Constant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Train/Train.java" />
         <option value="$PROJECT_DIR$/src/main/java/Shapelet/MultivariateShapelet.java" />
       </list>
     </option>
@@ -303,8 +156,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1017" />
-    <option name="y" value="97" />
+    <option name="x" value="488" />
     <option name="width" value="1094" />
     <option name="height" value="1047" />
   </component>
@@ -446,7 +298,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -475,7 +327,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Predict">
+  <component name="RunManager" selected="Application.Train">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -636,8 +488,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.Predict" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Train" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Train" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Predict" />
         <item index="2" class="java.lang.String" itemvalue="Application.GetSeries" />
         <item index="3" class="java.lang.String" itemvalue="Application.Test" />
       </list>
@@ -661,27 +513,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527770059527</updated>
-      <workItem from="1527770062251" duration="34406000" />
+      <workItem from="1527770062251" duration="36388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34406000" />
+    <option name="totallyTimeSpent" value="36388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37318435" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4301676" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5653631" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40893856" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -843,16 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeletTransform/QualityMeasures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ShapeletTransform/OrderLineObj.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -887,38 +729,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="135" column="16" lean-forward="false" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
-          <folding>
-            <element signature="e#4431#4432#0" expanded="true" />
-            <element signature="e#4477#4478#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Train/Train.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="53" column="48" lean-forward="true" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
-          <caret line="27" column="53" lean-forward="false" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Preprocess/GetSeries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="181" column="39" lean-forward="true" selection-start-line="181" selection-start-column="39" selection-end-line="181" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -933,18 +744,54 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ShapeletTransform/MyInstance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#403#404#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Preprocess/GetSeries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3148">
+          <caret line="181" column="39" lean-forward="false" selection-start-line="181" selection-start-column="39" selection-end-line="181" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Train/Train.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeletTransform/QualityMeasures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Shapelet/MultivariateShapelet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="169" column="29" lean-forward="true" selection-start-line="169" selection-start-column="29" selection-end-line="169" selection-end-column="29" />
+        <state relative-caret-position="153">
+          <caret line="73" column="45" lean-forward="false" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
