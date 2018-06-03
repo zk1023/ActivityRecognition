@@ -9,7 +9,6 @@ import weka.core.Instances;
 import weka.core.SerializationHelper;
 
 import java.io.FileReader;
-import java.io.Serializable;
 import java.util.Random;
 
 

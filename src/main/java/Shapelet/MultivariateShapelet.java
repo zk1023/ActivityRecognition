@@ -138,6 +138,18 @@ public class MultivariateShapelet {
                 }
                 bw.write(Constant.labels.get(i) + ",");
             }
+        }else{
+            Constant.labels = FileUtils.getLabels(Constant.matrixTrain_Path);
+            Constant.number_act = Constant.labels.size();
+            bw.write("@attribute" + " " + "class" + " " + "{");
+            //添加属性 与动作种类有关
+            for (int i = 0; i < Constant.number_act; i++) {
+                if (i == (Constant.number_act - 1)) {
+                    bw.write(Constant.labels.get(i) + "}" + "\r\n");
+                    break;
+                }
+                bw.write(Constant.labels.get(i) + ",");
+            }
         }
         bw.write("@data" + "\r\n");
         //传感器个数
@@ -175,7 +187,11 @@ public class MultivariateShapelet {
                     }
                 }
             }
-            line =line + myInstance.getInstanceClass()+"";
+            if(Constant.environment==0) {
+                line = line + myInstance.getInstanceClass() + "";
+            }else{
+                line = line + "?";
+            }
             bw.write(line+"\n");
             line = "";
             bufferedReader.close();

@@ -89,7 +89,11 @@ public class FileUtils {
             reader.close();
             TreeSet<String> setKinds = new TreeSet<String>() ;
             String label ;
-            for(int i = 0; i < list.size(); i ++){
+            int i=0;
+            if(Constant.environment == 1){
+                i = FileUtils.getNumber_File(Constant.filePath_shapelet) +3;
+            }
+            for(; i < list.size(); i ++){
                 label = list.get(i)[list.get(i).length - 1] ;
                 setKinds.add(label) ;
             }
