@@ -22,7 +22,10 @@ public class FileUtils {
             List<String[]> list = reader.readAll();
             reader.close();
             int number = list.get(0).length - 1 ;
-            return  number;
+            if(Constant.environment == 0){
+                return  number;
+            }
+            return number + 1;
         }
         return 0 ;
     }
