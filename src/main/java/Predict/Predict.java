@@ -5,6 +5,7 @@ import Shapelet.MultivariateShapelet;
 import Utils.Constant;
 import Utils.FileUtils;
 import weka.classifiers.Classifier;
+
 import weka.core.Instances;
 import java.io.FileReader;
 
@@ -53,6 +54,7 @@ public class Predict {
     }
     public static void main(String[] args) throws Exception{
         init();
+        GetSeries.paddingData(Constant.path, "test.csv");
         GetSeries.spiltSeries();
         System.out.println("生成预测矩阵");
         MultivariateShapelet.getMatrix(Constant.matrixTest_Path);

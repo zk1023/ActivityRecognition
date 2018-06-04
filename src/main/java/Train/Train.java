@@ -22,9 +22,9 @@ import java.util.Random;
 */
 public class Train {
 
-    public static void init() throws Exception{
+    public static void init(String fileName) throws Exception{
         System.out.println("训练过程初始化=============================================");
-        Constant.path = "DataSet/hand_train.csv";
+        Constant.path = fileName;
         //获取活动具体类别
         Constant.labels = FileUtils.getLabels(Constant.path) ;
         if(Constant.labels == null || Constant.labels.isEmpty() || Constant.labels.size() == 0 || Constant.labels.size() > 1000){
@@ -79,7 +79,9 @@ public class Train {
         System.out.println("模型生成完毕，并存入到："+Constant.model_path+"/"+userName+".model");
     }
     public static void main(String[] args) throws Exception{
-        init();
+        String fileName = "DataSet/hand_train.csv";
+        init(fileName);
+        GetSeries.paddingData(fileName,"test.csv");
         GetSeries.spiltSeries();
         MultivariateShapelet.generateShapelet();
         System.out.println("生成训练矩阵");

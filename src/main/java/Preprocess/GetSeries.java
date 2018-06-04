@@ -198,7 +198,49 @@ public class GetSeries {
         bw.close();
         br.close();
     }
-
+    /**
+    * 按列进行遍历，对于空值，取该列均值进行填充
+    * @author      zhangkai
+    * @CreateDate:     2018/6/3 19:52
+    * @UpdateDate:     2018/6/3 19:52
+    */
+    public static void paddingData(String from, String to) throws Exception{
+        CSVReader reader = new CSVReader(new FileReader(new File(from))) ;
+        List<String[]> list = reader.readAll();
+        CSVWriter writer = new CSVWriter(new FileWriter(to));
+        String[] column = new String[list.get(0).length];
+        String[] line = new String[list.get(0).length];
+        double sum;
+        double k ;
+        for (int i = 0; i < list.get(0).length; i++) {
+            sum=0;
+            k=0;
+            for (int j = 0; j < list.size(); j++) {
+                if(!"".equals(list.get(j)[i])&&!list.get(j)[i].isEmpty()){
+                    sum+=Double.parseDouble(list.get(j)[i]);
+                    k++;
+                }
+            }
+            column[i] = sum/k+"";
+        }
+        for(int i=0;i<list.size();i++){
+            for(int j=0;j<list.get(0).length;j++){
+                line[j]=list.get(i)[j];
+                if("".equals(list.get(i)[j])||list.get(i)[j].isEmpty()){
+                    line[j] = column[j];
+                }
+            }
+            writer.writeNext(line);
+        }
+        reader.close();
+        writer.close();
+        reader = new CSVReader(new FileReader(to)) ;
+        writer = new CSVWriter(new FileWriter(from));
+        writer.writeAll(reader.readAll());
+        reader.close();
+        writer.close();
+        FileUtils.delFile(to);
+    }
     public static void spiltSeries() throws Exception{
         if(Constant.environment==0) {
             splitClass();
@@ -210,7 +252,7 @@ public class GetSeries {
         addAttribute();
         System.out.println("数据预处理完毕！");
     }
-    public static void main(String[] args){
-
+    public static void main(String[] args) throws Exception{
+        paddingData("C:/Users/Administrator/Desktop/22.csv","C:/Users/Administrator/Desktop/33.csv");
     }
 }

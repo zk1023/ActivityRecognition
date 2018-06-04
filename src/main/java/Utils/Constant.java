@@ -16,6 +16,8 @@ public class Constant {
     public static String model_path = "models" ;
     //训练或者测试数据路径
     public static String path = "" ;
+    //填充缺失值后的文件位置
+    public static String path_pad = "" ;
     //按照动作分类后的文件位置
     public static String filePath_act = "DataSet/Act";
     //每个动作按照传感器分类后的文件位置
