@@ -11,13 +11,41 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class RealTimePrediction {
-    public static ArrayList<String> classify(String filePath,String userName) throws Exception{
-        String label=" ";
-        ArrayList<String> labelList = new ArrayList<>();
+//    public static ArrayList<String> classify2(String filePath,String userName) throws Exception{
+//        String label=" ";
+//        ArrayList<String> labelList = new ArrayList<>();
+//        Constant.path = filePath;
+//        Constant.environment = 1;
+//        //获取传感器的个数
+//        Constant.number_sensor = FileUtils.getNumber_Sensor(Constant.path);
+//        //切分数据
+//        GetSeries.spiltSeries();
+//        //生成测试矩阵
+//        MultivariateShapelet.getMatrix(Constant.matrixTest_Path);
+//        FileReader reader = new FileReader(Constant.matrixTest_Path);
+//        Instances instances = new Instances(reader);
+//        if (instances.classIndex() == -1){
+//            instances.setClassIndex(instances.numAttributes() - 1);
+//        }
+//        Classifier classifier_forest = (Classifier)weka.core.SerializationHelper.read(Constant.model_path+"/"+userName+".model");
+//        for(int i = 0;i<instances.numInstances();i++){
+//            System.out.println(i+":"+classifier_forest.classifyInstance(instances.instance(i)));
+//            labelList.add(classifier_forest.classifyInstance(instances.instance(i))+"");
+//            label += classifier_forest.classifyInstance(instances.instance(i))+" ";
+//        }
+//        return labelList;
+//    }
+
+    public static String classify(String filePath,String userName) throws Exception{
+        String label =  "";
+//        ArrayList<String> labelList = new ArrayList<>();
         Constant.path = filePath;
         Constant.environment = 1;
+        //获取传感器的个数
         Constant.number_sensor = FileUtils.getNumber_Sensor(Constant.path);
+        //切分数据
         GetSeries.spiltSeries();
+        //生成测试矩阵
         MultivariateShapelet.getMatrix(Constant.matrixTest_Path);
         FileReader reader = new FileReader(Constant.matrixTest_Path);
         Instances instances = new Instances(reader);
@@ -25,14 +53,16 @@ public class RealTimePrediction {
             instances.setClassIndex(instances.numAttributes() - 1);
         }
         Classifier classifier_forest = (Classifier)weka.core.SerializationHelper.read(Constant.model_path+"/"+userName+".model");
-        for(int i = 0;i<instances.numInstances();i++){
-            System.out.println(i+":"+classifier_forest.classifyInstance(instances.instance(i)));
-            labelList.add(classifier_forest.classifyInstance(instances.instance(i))+"");
-            label += classifier_forest.classifyInstance(instances.instance(i))+" ";
-        }
-        return labelList;
+        label = classifier_forest.classifyInstance(instances.instance(0)) + "";
+//        for(int i = 0;i<instances.numInstances();i++){
+//            System.out.println(i+":"+classifier_forest.classifyInstance(instances.instance(i)));
+//            labelList.add(classifier_forest.classifyInstance(instances.instance(i))+"");
+//            label += classifier_forest.classifyInstance(instances.instance(i))+" ";
+//        }
+        return label;
     }
     public static void main(String[] args) throws Exception{
-        classify("C:/Users/Administrator/Desktop/22.csv","test");
+        String label = classify("C:/Users/Administrator/Desktop/22.csv","pb_20180828");
+        System.out.println(label);
     }
 }

@@ -212,4 +212,38 @@ public class FileUtils {
         }
         return false ;
     }
+    /**
+     *
+     * 2018年7月18日
+     * @param
+     * @return
+     * Description 查询每一类数据个数
+     */
+//    public static List<String> numOfSort(String fileName) throws Exception{
+//        File file = new File(fileName) ;
+//        List<String> lables = getLabels(fileName);
+//        if(file.exists()){
+//            CSVReader reader=new CSVReader(new FileReader(fileName));
+//            List<String[]> list = reader.readAll();
+//            reader.close();
+//            TreeSet<String> setKinds = new TreeSet<String>() ;
+//            String label ;
+//            int i=0;
+//            if(Constant.environment == 1){
+//                i = FileUtils.getNumber_File(Constant.filePath_shapelet) +3;
+//            }
+//            for(; i < list.size(); i ++){
+//                label = list.get(i)[list.get(i).length - 1] ;
+//                setKinds.add(label) ;
+//            }
+//            List<String> labels = new ArrayList<String>() ;
+//            for(String str : setKinds){
+//                labels.add(str) ;
+//            }
+//            return labels ;
+//        }
+//    }
+    public static void main(String args[]){
+        System.out.println("1");
+    }
 }

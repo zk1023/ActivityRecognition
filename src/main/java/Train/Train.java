@@ -32,7 +32,6 @@ public class Train {
             if(Constant.labels != null){
                 System.out.println("label个数为：     " +Constant.labels.size());
             }
-            return ;
         }
         System.out.println("训练数据集："+Constant.path);
         System.out.println();
@@ -79,14 +78,17 @@ public class Train {
         System.out.println("模型生成完毕，并存入到："+Constant.model_path+"/"+userName+".model");
     }
     public static void main(String[] args) throws Exception{
-        String fileName = "DataSet/hand_train.csv";
+        String fileName = "DataSet/pb_train_hand.csv";
+        //初始化
         init(fileName);
+        //补全数据中的空值
         GetSeries.paddingData(fileName,"test.csv");
+        //滑动窗口切分数据
         GetSeries.spiltSeries();
         MultivariateShapelet.generateShapelet();
-        System.out.println("生成训练矩阵");
-        MultivariateShapelet.getMatrix(Constant.matrixTrain_Path);
-        System.out.println("训练矩阵生成完毕");
-        generateModel("test");
+//        System.out.println("生成训练矩阵");
+//        MultivariateShapelet.getMatrix(Constant.matrixTrain_Path);
+//        System.out.println("训练矩阵生成完毕");
+//        generateModel("pb_20180828");
     }
 }

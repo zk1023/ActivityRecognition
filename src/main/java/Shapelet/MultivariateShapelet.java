@@ -93,6 +93,41 @@ public class MultivariateShapelet {
 
     }
 
+//    public static void getData(String path_from, String path_to) throws Exception {
+//        FileUtils.delDir(path_to);
+//
+//        //与传感器个数有关
+//        for(int  i = 0; i< Constant.number_sensor; i ++){
+//            BufferedReader reader = new BufferedReader(new FileReader(new File(path_from + "/sensor_"+i+".csv")));
+//            BufferedWriter writer = new BufferedWriter(new FileWriter(new File(path_to + "/sensor_"+i+".csv")));
+//            String str = "";
+//            int mark = 0 ;
+//            int count[] = new int[Constant.number_act] ;
+//            for(int j = 0; j < Constant.number_act; j ++){
+//                count[j] = 0;
+//            }
+//            while ((str = reader.readLine()) != null){
+//                str = str.replace("\"", "") ;
+//                String[] strs = str.split(",");
+//                if(mark < Constant.timeSeries + 3){
+//                    writer.write(str);
+//                    writer.write("\n");
+//                    mark ++ ;
+//                }else {
+////					System.out.println("part"+Main.part+"label  " + strs[Main.timeSeries]);
+//                    for(int k = 0; k < Constant.number_act; k ++){
+//                        if (strs[Constant.timeSeries].equals(Constant.labels.get(k)) && (count[k] < Constant.part)) {
+//                            count[k] ++;
+//                            writer.write(str + "\n") ;
+//                        }
+//                    }
+//                }
+//            }
+//            writer.close();
+//            reader.close();
+//        }
+//        System.out.println("数据选择完毕！");
+//    }
     public static void generateShapelet() throws Exception {
         String path = Constant.filePath_format;
         FileUtils.delFile(Constant.filePath_shapelet);
