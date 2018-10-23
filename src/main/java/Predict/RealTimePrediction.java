@@ -8,7 +8,6 @@ import weka.classifiers.Classifier;
 import weka.core.Instances;
 
 import java.io.FileReader;
-import java.util.ArrayList;
 
 public class RealTimePrediction {
 //    public static ArrayList<String> classify2(String filePath,String userName) throws Exception{

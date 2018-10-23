@@ -7,7 +7,6 @@ import kafka.consumer.KafkaStream;
 import kafka.javaapi.consumer.ConsumerConnector;
 import kafka.serializer.StringDecoder;
 import kafka.utils.VerifiableProperties;
-import org.apache.kafka.clients.producer.KafkaProducer;
 
 import java.io.File;
 import java.io.FileWriter;
