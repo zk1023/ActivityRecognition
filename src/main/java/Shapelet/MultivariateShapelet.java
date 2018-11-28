@@ -16,7 +16,6 @@ import weka.core.Instances;
 public class MultivariateShapelet {
     public static ShapeletTransform st;
     public static ArrayList<Shapelet> clusteredShapelets;
-
     private static void writeShapelet(ArrayList<Shapelet> clusteredShapelets, int a) throws IOException {
         // TODO Auto-generated method stub
         // FileWriter writer = new FileWriter("shapelet.csv",true);
@@ -69,8 +68,16 @@ public class MultivariateShapelet {
     public static Instances clusteredShapeletTransformExample(Instances train) {
         Instances shapeletT = null;
 
-        int nosShapelets = (train.numAttributes() - 1) * train.numInstances() / Constant.clust_num;
+//        int nosShapelets = (train.numAttributes() - 1) * train.numInstances() / Constant.clust_num;
+        int nosShapelets = st.getNumberOfShapelets() / 3 ;
+
         // System.out.println("noshapelets = "+nosShapelets);
+//        if(nosShapelets > st.getNumberOfShapelets()){
+//            nosShapelets = st.getNumberOfShapelets() ;
+//        }
+        if(nosShapelets < 2){
+            nosShapelets = 2 ;
+        }
         ClusteredShapeletTransform cst = new ClusteredShapeletTransform(st, nosShapelets);
         //System.out.println("----------"+st.shapelets.size());
         System.out.println(" Clustering down to " + nosShapelets + " Shapelets");
@@ -133,6 +140,8 @@ public class MultivariateShapelet {
         FileUtils.delFile(Constant.filePath_shapelet);
         //传感器个数
         for (int i = 0; i < Constant.number_sensor; i++) {
+//            new RunKafkaProduce().produce((i+1)*100/Constant.number_sensor+"%");
+//            new RunKafkaProduce().produce("trainSuccess");
             System.out.println("生成shapeleting:============================= " + (i+1));
             //根据训练集中的文件生成shapelet
             FileReader reader = new FileReader(new File(path + "/" + "sensor_" + i + ".csv"));
@@ -200,7 +209,7 @@ public class MultivariateShapelet {
         String str = null;
         String line = new String();
         for(int i = 0; i <instances[0].numInstances(); i ++){
-            ArrayList<String> arr = new ArrayList<>();
+            ArrayList<String> arr = new ArrayList<String>();
             for(int j = 0; j < Constant.number_sensor; j ++){
                 lineStr = instances[j].instance(i).toString() ;
                 arr.add(lineStr) ;

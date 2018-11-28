@@ -2,6 +2,7 @@ package Train;
 import Preprocess.GetSeries;
 import Shapelet.MultivariateShapelet;
 import Utils.Constant;
+import Utils.DBUtils;
 import Utils.FileUtils;
 import weka.classifiers.Evaluation;
 import weka.classifiers.trees.RandomForest;
@@ -25,6 +26,7 @@ public class Train {
     public static void init(String fileName) throws Exception{
         System.out.println("训练过程初始化=============================================");
         Constant.path = fileName;
+        Constant.environment = 0;
         //获取活动具体类别
         Constant.labels = FileUtils.getLabels(Constant.path) ;
         if(Constant.labels == null || Constant.labels.isEmpty() || Constant.labels.size() == 0 || Constant.labels.size() > 1000){
@@ -55,7 +57,7 @@ public class Train {
         System.out.println("数据预处理开始=============================================");
     }
 
-    public static void generateModel(String userName) throws Exception {
+    public static boolean generateModel(String userName) throws Exception {
         System.out.println("开始生成模型");
         String train = Constant.matrixTrain_Path;
         FileReader  reader = new FileReader(train);
@@ -76,9 +78,14 @@ public class Train {
         System.out.println(evaluation_forest.toClassDetailsString());
 
         System.out.println("模型生成完毕，并存入到："+Constant.model_path+"/"+userName+".model");
+        return true;
     }
-    public static void main(String[] args) throws Exception{
-        String fileName = "DataSet/pb_train_hand.csv";
+    public static boolean train(String userName) throws Exception{
+//        String fileName = "DataSet/pb_train_hand_mini.csv";
+//        String fileName = DBUtils.getData(userName) ;
+
+        String fileName = userName ;
+
         //初始化
         init(fileName);
         //补全数据中的空值
@@ -87,8 +94,12 @@ public class Train {
         GetSeries.spiltSeries();
         MultivariateShapelet.generateShapelet();
 //        System.out.println("生成训练矩阵");
-//        MultivariateShapelet.getMatrix(Constant.matrixTrain_Path);
+        MultivariateShapelet.getMatrix(Constant.matrixTrain_Path);
 //        System.out.println("训练矩阵生成完毕");
-//        generateModel("pb_20180828");
+        return generateModel(userName);
+    }
+    public static void main(String[] args) throws Exception{
+        boolean flag = train("C:\\Users\\Administrator\\Desktop\\111.csv") ;
+        System.out.println(flag);
     }
 }

@@ -1,4 +1,4 @@
-package kafka;
+package Shapelet;
 
 import Utils.Constant;
 import kafka.javaapi.producer.Producer;
@@ -6,6 +6,7 @@ import kafka.producer.KeyedMessage;
 import kafka.producer.ProducerConfig;
 
 import java.util.Properties;
+
 public class RunKafkaProduce {
 
     private final Producer<String, String> producer;

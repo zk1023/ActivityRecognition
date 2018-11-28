@@ -12,6 +12,20 @@ import java.util.List;
  * @Version:        1.0
  */
 public class Constant {
+    //mysql数据库
+    public static String dbName = "first_mysql_test" ;
+    public static String user = "root" ;
+    public static String password = "root" ;
+    public static String Ip = "localhost" ;
+//    public static String dbName = "pose" ;
+//    public static String user = "root" ;
+//    public static String password = "123456" ;
+//    public static String Ip = "219.216.64.154" ;
+
+    //训练集所需列
+    public static String columns[] = {"acceleration_x","acceleration_y","acceleration_z","angularVelocity_x","angularVelocity_y","angularVelocity_z","altimeterRate","airpressure","heartRate","RRInterval","label"} ;
+    //kafka所在机器ip
+
     //模型存放位置
     public static String model_path = "models" ;
     //训练或者测试数据路径
@@ -47,5 +61,7 @@ public class Constant {
     //标志 0为实验 1为线上识别
     public static int environment = 0 ;
     //shapelet聚类数量设置
-    public static int clust_num = 1500;
+    public static int clust_num = 80;
+
+//    public static int clust_num = 1500;
 }

@@ -1,6 +1,8 @@
 package kafka;
 
 import Predict.RealTimePrediction;
+import Train.Train;
+import Utils.Constant;
 import kafka.consumer.ConsumerConfig;
 import kafka.consumer.ConsumerIterator;
 import kafka.consumer.KafkaStream;
@@ -19,14 +21,14 @@ public class RunKafkaConsumer {
 
     private final ConsumerConnector consumer;
 
-    private final static  String TOPIC="test6";
+    private final static  String TOPIC="test5";
 
     private RunKafkaConsumer(){
         Properties props=new Properties();
         //zookeeper
-        props.put("zookeeper.connect","219.216.64.41:2181");
+        props.put("zookeeper.connect", Constant.Ip+":2181");
         //topic
-        props.put("group.id","logstest");
+        props.put("group.id","test");
 
         //Zookeeper 超时
         props.put("zookeeper.session.timeout.ms", "4000");
@@ -62,8 +64,8 @@ public class RunKafkaConsumer {
     public static int judgeData(String Str){
         String content[] = Str.split("#")[0].split(",") ;
         int mark = 0;
-        for(int i=0;i<5;i++){
-            if(content[i].equals("")||content[i].length()==0){
+        for(int i=2;i<10;i++){
+            if(("").equals(content[i])||content[i].length()==0){
 
             }else{
                 mark = 1 ;
@@ -82,17 +84,37 @@ public class RunKafkaConsumer {
                 consumer.createMessageStreams(topicCountMap,keyDecoder,valueDecoder);
         KafkaStream<String, String> stream = consumerMap.get(TOPIC).get(0);
         ConsumerIterator<String, String> it = stream.iterator();
-
-        int messageCount = 0;
         String label;
         String content;
+        boolean flag = false;
+        int messageCount = 0;
+        String username ="";
         while (it.hasNext()){
+            username ="";
             content = it.next().message() ;
+            System.out.println(content);
+            if(content.split("#").length == 1 && content.split(",").length <= 10 ){
+                continue;
+            }
+            if("startTrain".equals(content.split("#")[0])){
+                flag = Train.train(content.split("#")[1]) ;
+                if(flag){
+                    new RunKafkaProduce().produce("trainSuccess");
+                }else{
+                    new RunKafkaProduce().produce("trainFailed");
+                }
+                continue ;
+            }
             if(judgeData(content) == 0){
                 continue;
             }
+            username = content.split("#")[7];
+            if("".equals(username)){
+                continue;
+            }
             makeFile(content);
-            label = RealTimePrediction.classify("C:/Users/Administrator/Desktop/22.csv","pb_20180828") ;
+            label = RealTimePrediction.classify("C:/Users/Administrator/Desktop/22.csv",username) ;
+
             System.out.println(label+"-->"+content);
 //            System.out.println(it.next().message());
 //            messageCount++;

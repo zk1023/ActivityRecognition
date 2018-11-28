@@ -1,12 +1,49 @@
 package Utils;
 import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
+
 import java.io.File;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.TreeSet;
+import java.io.FileWriter;
+import java.util.*;
 
 public class FileUtils {
+    /**
+     * * 2018年11月21日
+     * @throws Exception
+     * Description   提取部分数据进行训练
+     */
+    public static boolean extractData(String filePath, String targetPath, int num) throws Exception{
+//        int num = 800 ;
+        //查找文件中存在的标签
+        List<String> labels = FileUtils.getLabels(filePath) ;
+        System.out.println(Arrays.toString(labels.toArray()));
+        //记录每一类标签及其对应的数目
+        HashMap<String, Integer> map = new HashMap<String, Integer>() ;
+        for(int i=0;i<labels.size();i++){
+            map.put(labels.get(i), 0) ;
+        }
+        //读取数据
+        CSVReader reader = new CSVReader(new FileReader(new File(filePath))) ;
+        List<String[]> list = reader.readAll();
+        CSVWriter writer = new CSVWriter(new FileWriter(targetPath));
+        String str = "" ;
+        int column = list.get(0).length ;
+        int row = list.size() ;
+        for(int i=0;i<row;i++){
+            //最后一列代表活动类别
+            String key = list.get(i)[column-1] ;
+            int value = map.get(key) ;
+            if(value < num){
+                value ++ ;
+                map.put(key, value) ;
+                writer.writeNext(list.get(i));
+            }
+        }
+        writer.close();
+        reader.close();
+        return true ;
+    }
     /**
      *
      * 2018年3月14日

@@ -50,7 +50,7 @@ public class ClusteredShapeletTransform extends SimpleBatchFilter {
 	 */
 	public ClusteredShapeletTransform(ShapeletTransform shapes, int n) {
 		st = shapes;
-		this.clusteredShapelets = new ArrayList<>();
+		this.clusteredShapelets = new ArrayList<Shapelet>();
 		noClust = n;
 		this.shapeletsTrained = false;
 		this.shapelets = new ArrayList<Shapelet>();

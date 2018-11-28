@@ -212,7 +212,13 @@ public class GetSeries {
         String[] line = new String[list.get(0).length];
         double sum;
         double k ;
-        for (int i = 0; i < list.get(0).length; i++) {
+        int len ;
+        if(Constant.environment == 1){
+            len = list.get(0).length ;
+        }else{
+            len = list.get(0).length - 1 ;
+        }
+        for (int i = 0; i < len; i++) {
             sum=0;
             k=0;
             for (int j = 0; j < list.size(); j++) {
@@ -253,6 +259,6 @@ public class GetSeries {
         System.out.println("数据预处理完毕！");
     }
     public static void main(String[] args) throws Exception{
-        paddingData("C:/Users/Administrator/Desktop/22.csv","C:/Users/Administrator/Desktop/33.csv");
+//        paddingData("C:/Users/Administrator/Desktop/22.csv","C:/Users/Administrator/Desktop/33.csv");
     }
 }

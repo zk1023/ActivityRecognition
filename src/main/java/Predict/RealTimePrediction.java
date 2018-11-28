@@ -61,7 +61,7 @@ public class RealTimePrediction {
         return label;
     }
     public static void main(String[] args) throws Exception{
-        String label = classify("C:/Users/Administrator/Desktop/22.csv","pb_20180828");
+        String label = classify("C:/Users/Administrator/Desktop/22.csv","111");
         System.out.println(label);
     }
 }

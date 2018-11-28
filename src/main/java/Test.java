@@ -1,7 +1,55 @@
+import Utils.Constant;
+import Utils.FileUtils;
+import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
+import scala.collection.immutable.Stream;
+
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.Reader;
+import java.util.*;
 
 public class Test {
+    /**
+//     * 从训练集中，每类数据提取一部分用来训练
+//     * @param filePath  源文件
+//     * @param targetPath  目标文件
+//     * @param num 提取的num个数
+//     * @return
+//     * @throws Exception
+     */
+//    public static boolean extractData(String filePath, String targetPath, int num) throws Exception{
+////        int num = 800 ;
+//        //查找文件中存在的标签
+//        List<String> labels = FileUtils.getLabels(filePath) ;
+//        System.out.println(Arrays.toString(labels.toArray()));
+//        //记录每一类标签及其对应的数目
+//        HashMap<String, Integer> map = new HashMap<String, Integer>() ;
+//        for(int i=0;i<labels.size();i++){
+//            map.put(labels.get(i), 0) ;
+//        }
+//        //读取数据
+//        CSVReader reader = new CSVReader(new FileReader(new File(filePath))) ;
+//        List<String[]> list = reader.readAll();
+//        CSVWriter writer = new CSVWriter(new FileWriter(targetPath));
+//        String str = "" ;
+//        int column = list.get(0).length ;
+//        int row = list.size() ;
+//        for(int i=0;i<row;i++){
+//            //最后一列代表活动类别
+//            String key = list.get(i)[column-1] ;
+//            int value = map.get(key) ;
+//            if(value < num){
+//                value ++ ;
+//                map.put(key, value) ;
+//                writer.writeNext(list.get(i));
+//            }
+//        }
+//        writer.close();
+//        reader.close();
+//        return true ;
+//    }
     public static void writeFile(String Str) throws Exception{
         String content[] = Str.split("#")[0].split(",") ;
         int mark = 0;
@@ -28,9 +76,63 @@ public class Test {
 //        writer.close();
 //        System.out.println(content.length);
     }
+    public static List<String> getLables(String fileName){
+        List<String> labels = new ArrayList<>() ;
+        try {
+            File file = new File(fileName) ;
+            if(file.exists()){
+                CSVReader reader=new CSVReader(new FileReader(fileName));
+                List<String[]> list = reader.readAll();
+                reader.close();
+                for(int i=0;i<list.size();i++){
+                    if("@data".equals(list.get(i)[0])){
+                        String[] str = list.get(i-1) ;
+                        int len = str.length ;
+                        for(int j=0;j<len;j++){
+                            System.out.println(str[j]);
+                            if(j==0){
+                                labels.add(str[j].split("\\{")[1]) ;
+                            }else if(j==len-1){
+                                labels.add(str[j].split("}")[0]) ;
+                            }else{
+                                labels.add(str[j]) ;
+                            }
+                        }
+                        break ;
+                    }
+                }
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return labels ;
+    }
     public static void main(String[] args) throws Exception{
-        String s = ",,9,,,,,0.15,0.68,0.74,-3.87,1.92,0.55,8.00,1000.49,70,0.81,0.15,0.68,0.74,-3.87,1.92,0.55,8.00,1000.49,70,0.81,0.15,0.68,0.74,-3.87,1.92,0.55,8.00,1000.49,70,0.81,0.15,0.68,0.74,-3.87,1.92,0.55,8.00,1000.49,70,0.81,0.15,0.68,0.74,-3.87,1.92,0.55,8.00,1000.49,70,0.81,0.15,0.68,0.74,-3.87,1.92,0.55,8.00,1000.49,70,0.81,0.16,0.67,0.75,2.13,-2.99,-2.01,8.00,1000.49,70,0.81,0.16,0.67,0.75,2.13,-2.99,-2.01,8.00,1000.49,70,0.81,0.16,0.67,0.75,2.13,-2.99,-2.01,8.00,1000.49,70,0.81,0.16,0.67,0.75,2.13,-2.99,-2.01,8.00,1000.49,70,0.81,0.16,0.67,0.75,2.13,-2.99,-2.01,8.00,1000.49,70,0.81,0.16,0.67,0.75,2.13,-2.99,-2.01,8.00,1000.49,70,0.81,0.16,0.67,0.75,2.13,-2.99,-2.01,8.00,1000.49,70,0.81,0.15,0.68,0.72,2.29,-3.35,-2.71,8.00,1000.49,70,0.81,0.15,0.68,0.72,2.29,-3.35,-2.71,8.00,1000.49,70,0.81,0.15,0.68,0.72,2.29,-3.35,-2.71,8.00,1000.49,70,0.81,0.15,0.68,0.72,2.29,-3.35,-2.71,8.00,1000.49,70,0.81,0.15,0.68,0.72,2.29,-3.35,-2.71,8.00,1000.49,70,0.81,0.16,0.68,0.72,2.29,-3.35,-2.71,8.00,1000.49,70,0.81,0.16,0.68,0.72,4.05,-0.06,-5.24,8.00,1000.49,70,0.81,0.16,0.68,0.72,4.05,-0.06,-5.24,8.00,1000.49,70,0.81,0.16,0.68,0.72,4.05,-0.06,-5.24,8.00,1000.49,70,0.81,0.16,0.68,0.72,4.05,-0.06,-5.24,8.00,1000.49,70,0.78,0.16,0.68,0.72,4.05,-0.06,-5.24,8.00,1000.49,70,0.78,0.16,0.68,0.72,4.05,-0.06,-5.24,8.00,1000.49,70,0.78,0.16,0.68,0.72,4.05,-0.06,-5.24,8.00,1000.49,70,0.78,0.15,0.69,0.70,4.15,2.99,-8.72,8.00,1000.49,70,0.78,0.15,0.69,0.70,4.15,2.99,-8.72,8.00,1000.49,70,0.78,0.15,0.69,0.70,4.15,2.99,-8.72,8.00,1000.49,70,0.78,0.15,0.69,0.70,4.15,2.99,-8.72,8.00,1000.49,70,0.78,0.15,0.69,0.70,4.15,2.99,-8.72,8.00,1000.52,70,0.78,0.14,0.70,0.72,1.22,-0.15,-6.46,7.00,1000.52,70,0.78,0.14,0.70,0.72,1.22,-0.15,-6.46,7.00,1000.52,70,0.78,0.14,0.70,0.72,1.22,-0.15,-6.46,7.00,1000.52,70,0.78,0.14,0.70,0.72,1.22,-0.15,-6.46,7.00,1000.52,70,0.78,0.14,0.70,0.72,1.22,-0.15,-6.46,7.00,1000.52,70,0.78,0.14,0.70,0.72,1.22,-0.15,-6.46,7.00,1000.52,70,0.78,0.13,0.69,0.69,5.34,-4.91,-17.16,7.00,1000.52,70,0.78,0.13,0.69,0.69,5.34,-4.91,-17.16,7.00,1000.52,70,0.78,0.13,0.69,0.69,5.34,-4.91,-17.16,7.00,1000.52,70,0.78#1535463382#A000007376679F#1535463382797#null#40#50#zk#手腕部位采集#0" ;
-        writeFile(s);
+//        String filePath = "C:/Users/Administrator/Desktop/pb_train_hand.csv" ;
+//        String targetPath = "C:/Users/Administrator/Desktop/pb_train_hand_mini.csv" ;
+//        String fileName = "matrixTrain_Path" ;
+        lengthOfLongestSubstring("abcabcbb") ;
         System.out.println("Let's begin");
     }
+    public static int lengthOfLongestSubstring(String s) {
+        int index = 0;
+        int maxLength = 0;
+        int curLength = 0;
+        Map<Character,  Integer> map = new HashMap<>() ;
+        for(int i = 0; i < s.length(); i++){
+            if(map.get(s.charAt(i)) == null){
+                map.put(s.charAt(i), i) ;
+                curLength ++;
+            }else{
+                int n = map.get(s.charAt(i));
+                index = index > n ? index : n ;
+                curLength = i - index;
+                map.put(s.charAt(i), i);
+            }
+            maxLength = maxLength > curLength ? maxLength : curLength;
+        }
+        return maxLength;
+    }
+
 }
