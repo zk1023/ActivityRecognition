@@ -96,10 +96,11 @@ public class Train {
 //        System.out.println("生成训练矩阵");
         MultivariateShapelet.getMatrix(Constant.matrixTrain_Path);
 //        System.out.println("训练矩阵生成完毕");
-        return generateModel(userName);
+//        return generateModel(userName);
+        return generateModel("111");
     }
     public static void main(String[] args) throws Exception{
-        boolean flag = train("C:\\Users\\Administrator\\Desktop\\111.csv") ;
+        boolean flag = train("C:\\Users\\Administrator\\Desktop\\pb_train_hand.csv") ;
         System.out.println(flag);
     }
 }

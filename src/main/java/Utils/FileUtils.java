@@ -5,6 +5,7 @@ import com.opencsv.CSVWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.PrintStream;
 import java.util.*;
 
 public class FileUtils {
@@ -15,6 +16,13 @@ public class FileUtils {
      */
     public static boolean extractData(String filePath, String targetPath, int num) throws Exception{
 //        int num = 800 ;
+        int min = getMinNum(filePath);
+        if(num > min){
+            num = min;
+        }
+        if(num == 0){
+            num = 40;
+        }
         //查找文件中存在的标签
         List<String> labels = FileUtils.getLabels(filePath) ;
         System.out.println(Arrays.toString(labels.toArray()));
@@ -280,7 +288,51 @@ public class FileUtils {
 //            return labels ;
 //        }
 //    }
+
+    /**
+     * 获取最小类别样本的数目
+     * 2018年11月28日
+     * @param
+     * @return
+     * Description 查询每一类数据个数
+     */
+    public static int getMinNum(String fileName) throws Exception{
+        File file = new File(fileName) ;
+        if(file.exists()){
+            int num = 0;
+            int min = Integer.MAX_VALUE;
+            String label ;
+            List<String> lables = getLabels(fileName);
+            HashMap<String, Integer> map = new HashMap<>();
+            for(int i = 0; i < lables.size(); i++){
+                map.put(lables.get(i), 0);
+            }
+            CSVReader reader=new CSVReader(new FileReader(fileName));
+            List<String[]> list = reader.readAll();
+            reader.close();
+            for(int i = 0; i < list.size(); i ++){
+                label = list.get(i)[list.get(i).length - 1];
+                num = map.get(label);
+                num++;
+                map.put(label, num);
+            }
+            for(String key : map.keySet()){
+                int value = map.get(key);
+                System.out.println(key+ ":" + value);
+                if(min < value){
+                    min = value;
+                }
+            }
+            return min;
+        }
+        return 0;
+    }
     public static void main(String args[]){
-        System.out.println("1");
+        String filename = "C:/Users/Administrator/Desktop/matrixTrain.csv";
+        try {
+            getMinNum(filename);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

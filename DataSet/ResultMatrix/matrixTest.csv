@@ -1,0 +1,24 @@
+@relation test
+@attribute attribute1 numeric
+@attribute attribute2 numeric
+@attribute attribute3 numeric
+@attribute attribute4 numeric
+@attribute attribute5 numeric
+@attribute attribute6 numeric
+@attribute attribute7 numeric
+@attribute attribute8 numeric
+@attribute attribute9 numeric
+@attribute attribute10 numeric
+@attribute attribute11 numeric
+@attribute attribute12 numeric
+@attribute attribute13 numeric
+@attribute attribute14 numeric
+@attribute attribute15 numeric
+@attribute attribute16 numeric
+@attribute attribute17 numeric
+@attribute attribute18 numeric
+@attribute attribute19 numeric
+@attribute attribute20 numeric
+@attribute class {3,4,5,8,8},@attribute attribute23 numeric,@attribute attribute24 numeric,@attribute attribute25 numeric,@attribute attribute26 numeric,@attribute attribute27 numeric,@attribute attribute28 numeric,@attribute attribute29 numeric,@attribute attribute30 numeric,@data}
+@data
+10.5373,1.0358000000000005,30.47759999999999,1.7976931348623157E308,1.177399999999999,1.7976931348623157E308,1.7976931348623157E308,1.7976931348623157E308,1.7976931348623157E308,157625.3154,3518.5081999999993,371616.7689,410.0,1.7976931348623157E308,6669.127099999987,7558.26499999996,936.0,2025.0,1.7976931348623157E308,11.25,?
