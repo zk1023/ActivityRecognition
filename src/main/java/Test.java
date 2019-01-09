@@ -1,100 +1,16 @@
-import Utils.Constant;
-import Utils.FileUtils;
 import com.opencsv.CSVReader;
-import com.opencsv.CSVWriter;
-import scala.collection.immutable.Stream;
 
 import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.Reader;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Test {
 
-    // 桶排序
-    public static double[] bucketSort(double[] array){
-        // 1.得到数列的最大值和最小值以及差值d
-        double max = array[0];
-        double min = array[0];
-        int len = array.length;
-        for(int i = 1;i < len; i++){
-            if(max < array[i]){
-                max = array[i];
-            }
-            if(min > array[i]){
-                min = array[i];
-            }
-        }
-        double d = max - min;
-        //2.初始化桶
-        int bucketNum = array.length;
-        ArrayList<LinkedList<Double>> bucketList = new ArrayList<>();
-
-        for(int i = 0;i < bucketNum; i++){
-            bucketList.add(new LinkedList<>());
-        }
-        //3.遍历原始数组，将每个元素放入桶中
-        for(int i = 0; i < bucketNum; i++){
-            int num = (int)((array[i] - min) * (bucketNum - 1) / d);
-            bucketList.get(num).add(array[i]);
-        }
-        //4.对每个桶内部进行排序
-        for(int i = 0; i < bucketNum; i++){
-            //jdk底层采用了归并排序或者归并的优化版本
-            Collections.sort(bucketList.get(i));
-        }
-        //5.输出全部元素
-        double[] sortedArray = new double[bucketNum];
-        int index = 0;
-        for(LinkedList<Double> list : bucketList){
-            for(Double elem : list){
-                sortedArray[index] = elem;
-                index++;
-            }
-        }
-        return sortedArray;
-    }
-    // 计数排序
-    public static int[] countSort(int[] array){
-        // 1.得到数列的最大值和最小值以及差值d
-        int max = array[0];
-        int min = array[0];
-        int len = array.length;
-        for(int i = 1;i < len; i++){
-            if(max < array[i]){
-                max = array[i];
-            }
-            if(min > array[i]){
-                min = array[i];
-            }
-        }
-        int d = max - min;
-        //2.创建统计数组并统计元素个数
-        int[] countArray = new int[d + 1];
-        for(int i = 0;i < len; i++){
-            countArray[array[i] - min]++;
-        }
-        //3.统计数组做变形，后面的元素等于前面元素之和
-        int sum = 0;
-        for(int i = 0; i < countArray.length; i++){
-            sum += countArray[i];
-            countArray[i] = sum;
-        }
-        //4.倒序遍历原始数列，从统计数组中找到正确的位置，输出到结果数组中
-        int [] sortedArray = new int[len];
-        for(int i = array.length - 1; i >= 0; i--){
-            sortedArray[countArray[array[i] - min] - 1] = array[i];
-            countArray[array[i] - min]--;
-        }
-        return sortedArray;
-    }
     public static void main(String[] args) throws Exception{
-        double[] array = new double[]{4.12, 6.421, 0.0023, 3.0, 2.123, 8.122};
-        double[] sortedArray = bucketSort(array);
-//        int[] array = new int[]{95, 94, 91, 98, 99, 90, 99, 93, 91, 92};
-//        int[] sortedArray = countSort(array);
-        System.out.println(Arrays.toString(sortedArray));
+
     }
     /**
 //     * 从训练集中，每类数据提取一部分用来训练
