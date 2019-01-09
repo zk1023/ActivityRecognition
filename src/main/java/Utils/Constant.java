@@ -13,14 +13,20 @@ import java.util.List;
  */
 public class Constant {
     //mysql数据库
-    public static String dbName = "first_mysql_test" ;
-    public static String user = "root" ;
-    public static String password = "root" ;
-    public static String Ip = "localhost" ;
+    //public static String dbName = "first_mysql_test" ;
+    //public static String user = "root" ;
+    //public static String password = "root" ;
+    //public static String Ip = "localhost" ;
+
 //    public static String dbName = "pose" ;
 //    public static String user = "root" ;
 //    public static String password = "123456" ;
 //    public static String Ip = "219.216.64.154" ;
+
+    public static String dbName = "activityrecognition" ;
+    public static String user = "root" ;
+    public static String password = "root" ;
+    public static String Ip = "localhost" ;
 
     //训练集所需列
     public static String columns[] = {"acceleration_x","acceleration_y","acceleration_z","angularVelocity_x","angularVelocity_y","angularVelocity_z","altimeterRate","airpressure","heartRate","RRInterval","label"} ;

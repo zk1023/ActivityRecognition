@@ -5,7 +5,6 @@ import com.opencsv.CSVWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.PrintStream;
 import java.util.*;
 
 public class FileUtils {
@@ -16,12 +15,12 @@ public class FileUtils {
      */
     public static boolean extractData(String filePath, String targetPath, int num) throws Exception{
 //        int num = 800 ;
-        int min = getMinNum(filePath);
-        if(num > min){
-            num = min;
-        }
+//        int min = getMinNum(filePath);
+//        if(num > min){
+//            num = min;
+//        }
         if(num == 0){
-            num = 40;
+            num = 200;
         }
         //查找文件中存在的标签
         List<String> labels = FileUtils.getLabels(filePath) ;
