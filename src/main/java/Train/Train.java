@@ -84,7 +84,7 @@ public class Train {
 //        String fileName = "DataSet/pb_train_hand_mini.csv";
 //        String fileName = DBUtils.getData(userName) ;
 
-        String fileName = userName ;
+        String fileName = "C:\\Users\\Administrator\\Desktop\\111.csv" ;
 
         //初始化
         init(fileName);
@@ -97,10 +97,10 @@ public class Train {
         MultivariateShapelet.getMatrix(Constant.matrixTrain_Path);
 //        System.out.println("训练矩阵生成完毕");
 //        return generateModel(userName);
-        return generateModel("111");
+        return generateModel(userName);
     }
     public static void main(String[] args) throws Exception{
-        boolean flag = train("C:\\Users\\Administrator\\Desktop\\pb_train_hand.csv") ;
+        boolean flag = train("111") ;
         System.out.println(flag);
     }
 }

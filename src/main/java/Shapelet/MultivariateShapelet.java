@@ -39,7 +39,7 @@ public class MultivariateShapelet {
 
     public static Instances basicTransformExample(Instances train) {
         st = new ShapeletTransform();
-        System.out.println("classsssssssssssss = " + train.instance(0).classValue());
+//        System.out.println("classsssssssssssss = " + train.instance(0).classValue());
         // Let m=train.numAttributes()-1 (series length)
         // Let n= train.numInstances() (number of series)
         int nosShapelets = (train.numAttributes() - 1) * train.numInstances() / 5;
@@ -48,7 +48,7 @@ public class MultivariateShapelet {
         st.setNumberOfShapelets(nosShapelets);
         int minLength = (train.numAttributes() - 1) / 2;
         int maxLength = (train.numAttributes() - 1) / 1;
-        System.out.println("maxlength = " + maxLength);
+//        System.out.println("maxlength = " + maxLength);
         if (maxLength < ShapeletTransform.DEFAULT_MINSHAPELETLENGTH)
             maxLength = ShapeletTransform.DEFAULT_MINSHAPELETLENGTH;
         st.setShapeletMinAndMax(minLength, maxLength);
@@ -80,8 +80,8 @@ public class MultivariateShapelet {
         }
         ClusteredShapeletTransform cst = new ClusteredShapeletTransform(st, nosShapelets);
         //System.out.println("----------"+st.shapelets.size());
-        System.out.println(" Clustering down to " + nosShapelets + " Shapelets");
-        System.out.println(" From " + st.getNumberOfShapelets() + " Shapelets");
+//        System.out.println("Clustering down to " + nosShapelets + " Shapelets");
+//        System.out.println("From " + st.getNumberOfShapelets() + " Shapelets");
         // ShapeletTransform st = new ShapeletTransform();
         try {
             //	System.out.println(train);

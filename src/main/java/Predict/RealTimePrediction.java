@@ -35,7 +35,7 @@ public class RealTimePrediction {
 //        return labelList;
 //    }
 
-    public static String classify(String filePath,String userName) throws Exception{
+    public static String classify(String filePath, String userName) throws Exception{
         String label =  "";
 //        ArrayList<String> labelList = new ArrayList<>();
         Constant.path = filePath;
@@ -61,7 +61,7 @@ public class RealTimePrediction {
         return label;
     }
     public static void main(String[] args) throws Exception{
-        String label = classify("C:/Users/Administrator/Desktop/22.csv","111");
+        String label = classify("C:/Users/Administrator/Desktop/6.csv","111");
         System.out.println(label);
     }
 }

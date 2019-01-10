@@ -205,7 +205,7 @@ public class ClusteredShapeletTransform extends SimpleBatchFilter {
 		if (!st.foundShapelets())
 			st.process(data);
 		allShapelets = st.shapelets;
-		System.out.println("allshapelets.size = " + allShapelets.size());
+//		System.out.println("allshapelets.size = " + allShapelets.size());
 		/*
 		 * for(int i = 0;i<allShapelets.get(0).content.length;i++){
 		 * System.out.print(allShapelets.get(0).content[i]+";"); }

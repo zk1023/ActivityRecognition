@@ -115,7 +115,7 @@ public class ShapeletTransform extends SimpleBatchFilter{
                 this.qualityMeasure = new QualityMeasures.MoodsMedian();
                 break;
             default:
-            	System.out.println("default is excuted");
+//            	System.out.println("default is excuted");
               //  this.qualityMeasure = new QualityMeasures.InformationGain();
             	this.qualityMeasure = new QualityMeasures.FStat();
         }
@@ -287,7 +287,7 @@ public class ShapeletTransform extends SimpleBatchFilter{
             this.shapelets = findBestKShapeletsCache(this.numShapelets, data, this.minShapeletLength, this.maxShapeletLength); // get k shapelets ATTENTION
             this.shapeletsTrained = true;
             if(!supressOutput){
-                System.out.println(shapelets.size()+" Shapelets have been generated");
+//                System.out.println(shapelets.size()+" Shapelets have been generated");
             }
         }
         Instances output = calDistance(data);
