@@ -5,6 +5,7 @@ import Shapelet.MultivariateShapelet;
 import Utils.Constant;
 import Utils.FileUtils;
 import weka.classifiers.Classifier;
+import weka.classifiers.trees.RandomTree;
 import weka.core.Instances;
 
 import java.io.FileReader;
