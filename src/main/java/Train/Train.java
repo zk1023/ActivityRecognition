@@ -2,7 +2,6 @@ package Train;
 import Preprocess.GetSeries;
 import Shapelet.MultivariateShapelet;
 import Utils.Constant;
-import Utils.DBUtils;
 import Utils.FileUtils;
 import weka.classifiers.Evaluation;
 import weka.classifiers.trees.RandomForest;
@@ -81,10 +80,10 @@ public class Train {
         return true;
     }
     public static boolean train(String userName) throws Exception{
-//        String fileName = "DataSet/pb_train_hand_mini.csv";
+        String fileName = "DataSet/TrainSet/111.csv";
 //        String fileName = DBUtils.getData(userName) ;
 
-        String fileName = "C:\\Users\\Administrator\\Desktop\\111.csv" ;
+        //String fileName = "C:\\Users\\Administrator\\Desktop\\111.csv" ;
 
         //初始化
         init(fileName);

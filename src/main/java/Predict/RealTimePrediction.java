@@ -5,7 +5,6 @@ import Shapelet.MultivariateShapelet;
 import Utils.Constant;
 import Utils.FileUtils;
 import weka.classifiers.Classifier;
-import weka.classifiers.trees.RandomTree;
 import weka.core.Instances;
 
 import java.io.FileReader;
@@ -62,8 +61,8 @@ public class RealTimePrediction {
         return label;
     }
     public static void main(String[] args) throws Exception{
-        String label = classify("C:/Users/Administrator/Desktop/8.csv","111");
-//        String label = classify("DataSet/TestSet/6.csv","111");
+        //String label = classify("C:/Users/Administrator/Desktop/8.csv","111");
+        String label = classify("DataSet/TestSet/5.csv","111");
         System.out.println(label);
     }
 }

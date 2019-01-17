@@ -1,14 +1,13 @@
 package Train;
 
-import java.io.FileReader;
-import java.util.Random;
-
 import Utils.Constant;
-import scala.collection.immutable.Stream;
 import weka.classifiers.Classifier;
 import weka.classifiers.trees.J48;
 import weka.core.Instance;
 import weka.core.Instances;
+
+import java.io.FileReader;
+import java.util.Random;
 
 public class MyRandomForest
 {
@@ -241,6 +240,11 @@ public class MyRandomForest
 
         FileReader test = new FileReader(Constant.matrixTest_Path);
         Instances testInstances = new Instances(test);
-        System.out.println(my.classifierInstance(instances.instance(0)));
+        if (testInstances.classIndex() == -1){
+            testInstances.setClassIndex(testInstances.numAttributes() - 1);
+        }
+        System.out.println(testInstances.numInstances());
+        System.out.println(testInstances.instance(0));
+        System.out.println(my.classifierInstance(testInstances.instance(0)));
     }
 }

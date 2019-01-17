@@ -38,7 +38,6 @@ public class RunKafkaConsumer {
 
 
         props.put("serializer.class", "kafka.serializer.StringEncoder");
-
         ConsumerConfig config=new ConsumerConfig(props);
 
         consumer= kafka.consumer.Consumer.createJavaConsumerConnector(config);
