@@ -3,6 +3,8 @@ package Train;
 import java.io.FileReader;
 import java.util.Random;
 
+import Utils.Constant;
+import scala.collection.immutable.Stream;
 import weka.classifiers.Classifier;
 import weka.classifiers.trees.J48;
 import weka.core.Instance;
@@ -174,14 +176,15 @@ public class MyRandomForest
 
         for (int i = 0; i < this.instances.numClasses(); i++)
         {
+            System.out.print(classValue[i]+" ");
             if (classValue[i] > maxClassValue)
             {
                 maxClassValue = classValue[i];
 
                 classOfInstance = i;
             }
-
         }
+        System.out.println();
 
         return (int) classOfInstance;
 
@@ -189,7 +192,8 @@ public class MyRandomForest
 
     public static void main(String args[]) throws Exception {
         MyRandomForest my = new MyRandomForest();
-        String train = "C:/Users/Administrator/Desktop/aaa.csv";
+//        String train = "C:/Users/Administrator/Desktop/aaa.csv";
+        String train = Constant.matrixTrain_Path;
         FileReader reader = new FileReader(train);
 //        DataSource dataSource = new DataSource(
 //                "F:\数据挖掘\weka开发相关\UCI medium\kr-vs-kp.arff");
@@ -231,7 +235,12 @@ public class MyRandomForest
                 correct++;
             }
         }
+//        System.out.println(my.classifierInstance(instances.instance(0)));
         System.out.println("正确率：" + correct*1.0 / (instances.numInstances()*1.0));
 
+
+        FileReader test = new FileReader(Constant.matrixTest_Path);
+        Instances testInstances = new Instances(test);
+        System.out.println(my.classifierInstance(instances.instance(0)));
     }
 }
