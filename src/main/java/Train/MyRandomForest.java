@@ -3,9 +3,7 @@ package Train;
 import java.io.FileReader;
 import java.util.Random;
 
-import Utils.Constant;
 import weka.classifiers.Classifier;
-import weka.classifiers.trees.Id3;
 import weka.classifiers.trees.J48;
 import weka.core.Instance;
 import weka.core.Instances;
@@ -73,38 +71,64 @@ public class MyRandomForest
         this.numOfSelectAtt = numOfSelectAtt;
     }
 
-
     public Instances getRandomIntances(Instances instances)
     {
-
         Random seed = new Random();
-
-        for (int i = 0; i < instances.numAttributes()-instances.numAttributes() * this.numOfSelectAtt / 100; i++)
+        //随机选取样本
+        Instances newInstances = new Instances(instances, 0);
+        int randomInt;
+        int len = instances.numInstances();
+        for (int i = 0; i < this.numOfSelectAtt; i++)
         {
-            int randomInt = seed.nextInt(instances.numAttributes() - 1);
-
-            System.out.println("randomInt: " + randomInt);
-
-            if(instances.classIndex()!=i)
-            {
-                instances.deleteAttributeAt(randomInt);
-            }
-            else
-            {
-                i--;
-            }
-
+            randomInt = seed.nextInt(len);
+            System.out.print(randomInt + " ");
+            newInstances.add(instances.instance(randomInt));
         }
-
-        for (int i = 0; i < instances.numAttributes(); i++)
-        {
-            instances.deleteWithMissing(i);
+        System.out.println();
+        System.out.println("newInstances.numInstances(): " + newInstances.numInstances());
+        //随机选取特征
+        len = instances.numAttributes();
+        randomInt = seed.nextInt(len / 100);
+        for(int i = 0; i < randomInt; i++){
+            newInstances.deleteAttributeAt(seed.nextInt(newInstances.numAttributes() - 1));
         }
-
-        System.out.println(instances.numInstances());
-
-        return instances;
+        System.out.println("newInstances.numAttributes(): " + newInstances.numAttributes());
+        return newInstances;
     }
+
+//    public Instances getRandomIntances(Instances instances)
+//    {
+//        Random seed = new Random();
+//        //随机选取样本
+//        Instances newInstances ;
+//        int randomInt;
+//        for (int i = 0; i < instances.numAttributes()-instances.numAttributes() * this.numOfSelectAtt / 100; i++)
+//        {
+//            randomInt = seed.nextInt(instances.numAttributes() - 1);
+//
+//            System.out.println("randomInt: " + randomInt);
+//
+//            if(instances.classIndex() != i)
+//            {
+//                instances.deleteAttributeAt(randomInt);
+//            }
+//            else
+//            {
+//                i--;
+//            }
+//
+//        }
+//
+//        for (int i = 0; i < instances.numAttributes(); i++)
+//        {
+//            instances.deleteWithMissing(i);
+//        }
+//
+//        System.out.println(instances.numInstances());
+//        System.out.println(instances.numAttributes());
+//
+//        return instances;
+//    }
 
 
     public void buildClassifiers() throws Exception
@@ -163,8 +187,7 @@ public class MyRandomForest
 
     }
 
-    public static void main(String args[]) throws Exception
-    {
+    public static void main(String args[]) throws Exception {
         MyRandomForest my = new MyRandomForest();
         String train = "C:/Users/Administrator/Desktop/aaa.csv";
         FileReader reader = new FileReader(train);
@@ -182,7 +205,8 @@ public class MyRandomForest
 
         my.setNumOfClassifiers(10);
 
-        my.setNumOfSelectAtt(100);
+//        my.setNumOfSelectAtt(100);
+        my.setNumOfSelectAtt(60);
 
         long start = System.currentTimeMillis();
         my.buildClassifiers();
