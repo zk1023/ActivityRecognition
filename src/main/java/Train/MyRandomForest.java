@@ -82,18 +82,18 @@ public class MyRandomForest
         for (int i = 0; i < this.numOfSelectAtt; i++)
         {
             randomInt = seed.nextInt(len);
-            System.out.print(randomInt + " ");
+//            System.out.print(randomInt + " ");
             newInstances.add(instances.instance(randomInt));
         }
-        System.out.println();
-        System.out.println("newInstances.numInstances(): " + newInstances.numInstances());
+//        System.out.println();
+//        System.out.println("newInstances.numInstances(): " + newInstances.numInstances());
         //随机选取特征
         len = instances.numAttributes();
         randomInt = seed.nextInt(len / 100);
         for(int i = 0; i < randomInt; i++){
             newInstances.deleteAttributeAt(seed.nextInt(newInstances.numAttributes() - 1));
         }
-        System.out.println("newInstances.numAttributes(): " + newInstances.numAttributes());
+//        System.out.println("newInstances.numAttributes(): " + newInstances.numAttributes());
         return newInstances;
     }
 
@@ -192,7 +192,8 @@ public class MyRandomForest
     public static void main(String args[]) throws Exception {
         MyRandomForest my = new MyRandomForest();
 //        String train = "C:/Users/Administrator/Desktop/aaa.csv";
-        String train = Constant.matrixTrain_Path;
+//        String train = Constant.matrixTrain_Path;
+        String train = "DataSet/ResultMatrix/matrixTrain 8.csv";
         FileReader reader = new FileReader(train);
 //        DataSource dataSource = new DataSource(
 //                "F:\数据挖掘\weka开发相关\UCI medium\kr-vs-kp.arff");
@@ -238,13 +239,17 @@ public class MyRandomForest
         System.out.println("正确率：" + correct*1.0 / (instances.numInstances()*1.0));
 
 
-        FileReader test = new FileReader(Constant.matrixTest_Path);
+//        FileReader test = new FileReader(Constant.matrixTest_Path);
+        FileReader test = new FileReader("DataSet/ResultMatrix/matrixTest8.csv");
+
         Instances testInstances = new Instances(test);
         if (testInstances.classIndex() == -1){
             testInstances.setClassIndex(testInstances.numAttributes() - 1);
         }
-        System.out.println(testInstances.numInstances());
-        System.out.println(testInstances.instance(0));
-        System.out.println(my.classifierInstance(testInstances.instance(0)));
+        for(int i = 0;i < testInstances.numInstances(); i++){
+//            System.out.println(testInstances.numInstances());
+//            System.out.println(testInstances.instance(i));
+            System.out.println(my.classifierInstance(testInstances.instance(i)));
+        }
     }
 }
