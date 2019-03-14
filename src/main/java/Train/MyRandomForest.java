@@ -1,5 +1,7 @@
 package Train;
 
+import Preprocess.GetSeries;
+import Shapelet.MultivariateShapelet;
 import Utils.Constant;
 import weka.classifiers.Classifier;
 import weka.classifiers.trees.J48;
@@ -188,12 +190,26 @@ public class MyRandomForest
         return (int) classOfInstance;
 
     }
-
+    //初始化 生成训练矩阵
+    public static void train_init(String file_path){
+        try {
+            //获取训练集 预处理
+            Train.init(file_path);
+            GetSeries.spiltSeries();
+            MultivariateShapelet.generateShapelet();
+            MultivariateShapelet.getMatrix(Constant.matrixTrain_Path);
+            Train.generateModel("p1");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
     public static void main(String args[]) throws Exception {
         MyRandomForest my = new MyRandomForest();
 //        String train = "C:/Users/Administrator/Desktop/aaa.csv";
 //        String train = Constant.matrixTrain_Path;
-        String train = "DataSet/ResultMatrix/matrixTrain 8.csv";
+//        String train = "DataSet/ResultMatrix/matrixTrain 8.csv";
+        String train = "C:/Users/Administrator/Desktop/Papers/Dataset/TrainSet/1.csv";
+        train_init(train);
         FileReader reader = new FileReader(train);
 //        DataSource dataSource = new DataSource(
 //                "F:\数据挖掘\weka开发相关\UCI medium\kr-vs-kp.arff");
