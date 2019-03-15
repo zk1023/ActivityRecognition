@@ -3,6 +3,7 @@ package Train;
 import Preprocess.GetSeries;
 import Shapelet.MultivariateShapelet;
 import Utils.Constant;
+import Utils.FileUtils;
 import weka.classifiers.Classifier;
 import weka.classifiers.trees.J48;
 import weka.core.Instance;
@@ -91,6 +92,7 @@ public class MyRandomForest
 //        System.out.println("newInstances.numInstances(): " + newInstances.numInstances());
         //随机选取特征
         len = instances.numAttributes();
+        len = len < 100 ? 100 : len;
         randomInt = seed.nextInt(len / 100);
         for(int i = 0; i < randomInt; i++){
             newInstances.deleteAttributeAt(seed.nextInt(newInstances.numAttributes() - 1));
@@ -203,14 +205,40 @@ public class MyRandomForest
             e.printStackTrace();
         }
     }
+    public static void test_init(String file_path){
+        try {
+            //获取训练集 预处理
+            System.out.println("预测过程初始化=============================================");
+            Constant.path = file_path;
+            Constant.environment = 1;
+            System.out.println("预测数据集："+Constant.path);
+            System.out.println();
+            //获取传感器个数
+            Constant.number_sensor = FileUtils.getNumber_Sensor(Constant.path);
+            System.out.println("传感器个数：" + Constant.number_sensor + "\n");
+            System.out.println("数据预处理开始=============================================");
+            GetSeries.spiltSeries();
+            System.out.println("生成预测矩阵");
+            MultivariateShapelet.getMatrix(Constant.matrixTest_Path);
+            System.out.println("预测矩阵生成完毕");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+    //初始化 生成测试矩阵
     public static void main(String args[]) throws Exception {
         MyRandomForest my = new MyRandomForest();
 //        String train = "C:/Users/Administrator/Desktop/aaa.csv";
 //        String train = Constant.matrixTrain_Path;
 //        String train = "DataSet/ResultMatrix/matrixTrain 8.csv";
-        String train = "C:/Users/Administrator/Desktop/Papers/Dataset/TrainSet/1.csv";
+        String train;
+//        train = "C:/Users/Administrator/Desktop/Papers/Dataset/TrainSet/1.csv";
+        train = "C:\\Users\\Administrator\\Desktop\\Papers\\Experiment\\DataSet\\WISDOM\\train_3_6.csv";
+        String test_path = "C:\\Users\\Administrator\\Desktop\\Papers\\Experiment\\DataSet\\WISDOM\\test.csv";
+//        Train.generateModel("p1");
         train_init(train);
-        FileReader reader = new FileReader(train);
+        test_init(test_path);
+        FileReader reader = new FileReader(Constant.matrixTrain_Path);
 //        DataSource dataSource = new DataSource(
 //                "F:\数据挖掘\weka开发相关\UCI medium\kr-vs-kp.arff");
 //        DataSource dataSource = new DataSource(Constant.matrixTrain_Path);
@@ -256,7 +284,7 @@ public class MyRandomForest
 
 
 //        FileReader test = new FileReader(Constant.matrixTest_Path);
-        FileReader test = new FileReader("DataSet/ResultMatrix/matrixTest8.csv");
+        FileReader test = new FileReader(Constant.matrixTest_Path);
 
         Instances testInstances = new Instances(test);
         if (testInstances.classIndex() == -1){
@@ -265,7 +293,9 @@ public class MyRandomForest
         for(int i = 0;i < testInstances.numInstances(); i++){
 //            System.out.println(testInstances.numInstances());
 //            System.out.println(testInstances.instance(i));
-            System.out.println(my.classifierInstance(testInstances.instance(i)));
+
+            System.out.println(my.classifierInstance(testInstances.instance(i)) + " ");
+
         }
     }
 }
