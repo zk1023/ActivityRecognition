@@ -10,6 +10,9 @@ import weka.core.Instance;
 import weka.core.Instances;
 
 import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 public class MyRandomForest
@@ -20,9 +23,10 @@ public class MyRandomForest
 
     private String baseTree;
 
+    //分类器个数
     private int numOfClassifiers;
 
-
+    //属性个数
     private long numOfSelectAtt;
 
     public Instances getInstances()
@@ -156,7 +160,6 @@ public class MyRandomForest
             Instances newInstances = this.getRandomIntances(this.instances);
 
             this.classifiers[i].buildClassifier(newInstances);
-            System.out.println("classifier" + i + "has been build");
         }
     }
 
@@ -165,7 +168,7 @@ public class MyRandomForest
         double maxClassValue = 0.0;
 
         double classOfInstance = 0;
-
+        //类别总数
         double classValue[] = new double[this.instances.numClasses()];
         for (int i = 0; i < this.instances.numClasses(); i++)
         {
@@ -187,7 +190,6 @@ public class MyRandomForest
                 classOfInstance = i;
             }
         }
-        System.out.println();
 
         return (int) classOfInstance;
 
@@ -199,15 +201,29 @@ public class MyRandomForest
             Train.init(file_path);
             GetSeries.spiltSeries();
             MultivariateShapelet.generateShapelet();
-            MultivariateShapelet.getMatrix(Constant.matrixTrain_Path);
-            Train.generateModel("p1");
+            MultivariateShapelet.getMatrix("DataSet/ResultMatrix/matrixTrainP3_6.csv");
+            System.out.println("训练矩阵生成完毕");
         }catch (Exception e){
             e.printStackTrace();
         }
     }
+    // 测试矩阵带标签
     public static void test_init(String file_path){
         try {
             //获取训练集 预处理
+            System.out.println("预测过程初始化=============================================");
+            Train.init(file_path);
+            GetSeries.spiltSeries();
+            MultivariateShapelet.getMatrix("DataSet/ResultMatrix/matrixTestP3_6.csv");
+            System.out.println("预测矩阵生成完毕");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+    //测试矩阵不带标签
+    public static void test(String file_path){
+        try {
+            //获取训练矩阵 预处理
             System.out.println("预测过程初始化=============================================");
             Constant.path = file_path;
             Constant.environment = 1;
@@ -233,42 +249,46 @@ public class MyRandomForest
 //        String train = "DataSet/ResultMatrix/matrixTrain 8.csv";
         String train;
 //        train = "C:/Users/Administrator/Desktop/Papers/Dataset/TrainSet/1.csv";
-        train = "C:\\Users\\Administrator\\Desktop\\Papers\\Experiment\\DataSet\\WISDOM\\train_3_6.csv";
-        String test_path = "C:\\Users\\Administrator\\Desktop\\Papers\\Experiment\\DataSet\\WISDOM\\test.csv";
+        train = "C:\\Users\\Administrator\\Desktop\\Papers\\Dataset\\WISDM\\TrainSet\\Train\\train3_6.csv";
+        String test_path = "C:\\Users\\Administrator\\Desktop\\Papers\\Dataset\\WISDM\\TestSet\\Test\\test3_6.csv";
 //        Train.generateModel("p1");
+        //生成训练矩阵 和 测试矩阵
         train_init(train);
         test_init(test_path);
-        FileReader reader = new FileReader(Constant.matrixTrain_Path);
-//        DataSource dataSource = new DataSource(
-//                "F:\数据挖掘\weka开发相关\UCI medium\kr-vs-kp.arff");
-//        DataSource dataSource = new DataSource(Constant.matrixTrain_Path);
+        //test(test_path);
+        //训练矩阵 、测试矩阵位置
+        String trainMatrix3_6 = "DataSet/ResultMatrix/matrixTrainP3_6.csv";
+        String trainMatrix3_5 = "DataSet/ResultMatrix/matrixTrainP3_5.csv";
+        String testMatrix3_6 = "DataSet/ResultMatrix/matrixTestP3_6.csv";
 
-//        Instances instances = new Instances(dataSource.getDataSet());
-//
-//        instances.setClassIndex(instances.numAttributes() - 1);
+        //根据训练矩阵 建立分类器
+        FileReader reader = new FileReader(trainMatrix3_6);
         Instances instances = new Instances(reader);
+        //设置最后一列为标签
         instances.setClassIndex(instances.numAttributes() - 1);
-
         my.setInstances(instances);
-
+        //建立随机森林分类器
         my.setNumOfClassifiers(10);
-
 //        my.setNumOfSelectAtt(100);
         my.setNumOfSelectAtt(60);
-
-        long start = System.currentTimeMillis();
+        //long start = System.currentTimeMillis();
         my.buildClassifiers();
-        long end = System.currentTimeMillis();
-
+        //long end = System.currentTimeMillis();
         System.out.println("MyRandomForest has been builded!!!!!");
-        System.out.println("用时：" + (end - start) / 1000.0);
-
-
-        instances.deleteWithMissingClass();
-        for (int i = 0; i < instances.numAttributes(); i++)
-        {
-            instances.deleteWithMissing(i);
+        //获取样本的标签
+        String s[] = instances.classAttribute().toString().split("\\{")[1].split("}")[0].split(",");
+        List<String> label = new ArrayList<>();
+        for(String key : s){
+            label.add(key);
         }
+        System.out.println(Arrays.toString(label.toArray()));
+        //System.out.println("用时：" + (end - start) / 1000.0);
+        //删除没有类标签的样本
+        //instances.deleteWithMissingClass();
+        //for (int i = 0; i < instances.numAttributes(); i++)
+        //{
+        //    instances.deleteWithMissing(i);
+        //}
 
 
         int correct = 0;
@@ -279,23 +299,30 @@ public class MyRandomForest
                 correct++;
             }
         }
+        System.out.println("样例总数为：" + instances.numInstances());
+
 //        System.out.println(my.classifierInstance(instances.instance(0)));
         System.out.println("正确率：" + correct*1.0 / (instances.numInstances()*1.0));
 
 
 //        FileReader test = new FileReader(Constant.matrixTest_Path);
-        FileReader test = new FileReader(Constant.matrixTest_Path);
+        //预测过程
+        System.out.println("Downstairs,Jogging,Sitting,Standing,Upstairs,Walking");
+        String testLabel[] = {"Downstairs","Jogging" ,"Sitting", "Standing", "Upstairs", "Walking"};
+        FileReader test = new FileReader(testMatrix3_6);
 
         Instances testInstances = new Instances(test);
         if (testInstances.classIndex() == -1){
             testInstances.setClassIndex(testInstances.numAttributes() - 1);
         }
         for(int i = 0;i < testInstances.numInstances(); i++){
-//            System.out.println(testInstances.numInstances());
-//            System.out.println(testInstances.instance(i));
-
-            System.out.println(my.classifierInstance(testInstances.instance(i)) + " ");
-
+            //System.out.println(testInstances.instance(i));
+            if(i % 10 != 0){
+                System.out.println("------Predict: " + label.get(new Double(my.classifierInstance(testInstances.instance(i))).intValue()));
+            }else{
+                System.out.println("RealLabel " + testLabel[i/10] + ": ");
+            }
         }
+        System.out.println("测试样本为： " + testInstances.numInstances());
     }
 }
