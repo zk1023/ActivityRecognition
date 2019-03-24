@@ -53,7 +53,7 @@ public class Constant {
     //测试矩阵
     public static String matrixTest_Path = "DataSet/ResultMatrix/matrixTest.csv" ;
     //时间序列长度
-    public static int timeSeries = 40 ;
+    public static int timeSeries = 40;
     //是否对训练集数据进行选择  1代表选择部分数据进行训练或测试  0代表不对数据进行选择
     public static int chooseData = 1;
     //传感器种类个数

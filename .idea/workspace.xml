@@ -2,30 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15d6143e-5dcd-4a24-b4a5-7a549d3ee8dd" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest5.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest8.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTestP3_6.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrain 4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrain 5.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrain 8.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrain.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrain3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrainP3_5.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrainP3_6.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Train/MyRandomForest.class" afterPath="$PROJECT_DIR$/target/classes/Train/MyRandomForest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_yammer_metrics_metrics_core_2_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_yammer_metrics_metrics_core_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_3_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_11_0_8_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_11_0_8_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_0_8_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_0_8_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_xml_2_11_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_xml_2_11_1_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_1_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_1_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Train/Train.class" afterPath="$PROJECT_DIR$/target/classes/Train/Train.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActivityRecognition.iml" afterPath="$PROJECT_DIR$/ActivityRecognition.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/Act/Downstairs.csv" afterPath="$PROJECT_DIR$/DataSet/Act/Downstairs.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/Act/Jogging.csv" afterPath="$PROJECT_DIR$/DataSet/Act/Jogging.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/Act/Sitting.csv" afterPath="$PROJECT_DIR$/DataSet/Act/Sitting.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/Act/Standing.csv" afterPath="$PROJECT_DIR$/DataSet/Act/Standing.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/Act/Upstairs.csv" afterPath="$PROJECT_DIR$/DataSet/Act/Upstairs.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/Act/Walking.csv" afterPath="$PROJECT_DIR$/DataSet/Act/Walking.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Downstairs/sensor_0.csv" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Downstairs/sensor_0.csv" />
@@ -34,6 +29,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Jogging/sensor_0.csv" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Jogging/sensor_0.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Jogging/sensor_1.csv" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Jogging/sensor_1.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Jogging/sensor_2.csv" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Jogging/sensor_2.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Sitting/sensor_0.csv" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Sitting/sensor_0.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Sitting/sensor_1.csv" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Sitting/sensor_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Sitting/sensor_2.csv" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Sitting/sensor_2.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Standing/sensor_0.csv" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Standing/sensor_0.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Standing/sensor_1.csv" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Standing/sensor_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Standing/sensor_2.csv" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Standing/sensor_2.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Upstairs/sensor_0.csv" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Upstairs/sensor_0.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Upstairs/sensor_1.csv" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Upstairs/sensor_1.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Upstairs/sensor_2.csv" afterPath="$PROJECT_DIR$/DataSet/ActSpiltSensor/Upstairs/sensor_2.csv" />
@@ -43,12 +44,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/Format/sensor_0.csv" afterPath="$PROJECT_DIR$/DataSet/Format/sensor_0.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/Format/sensor_1.csv" afterPath="$PROJECT_DIR$/DataSet/Format/sensor_1.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/Format/sensor_2.csv" afterPath="$PROJECT_DIR$/DataSet/Format/sensor_2.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest.csv" afterPath="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/Sensor/sensor_0.csv" afterPath="$PROJECT_DIR$/DataSet/Sensor/sensor_0.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/Sensor/sensor_1.csv" afterPath="$PROJECT_DIR$/DataSet/Sensor/sensor_1.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/Sensor/sensor_2.csv" afterPath="$PROJECT_DIR$/DataSet/Sensor/sensor_2.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataSet/Shapelet/shapelet.csv" afterPath="$PROJECT_DIR$/DataSet/Shapelet/shapelet.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/defaultShapeletOutput.txt" afterPath="$PROJECT_DIR$/defaultShapeletOutput.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Train/MyRandomForest.java" afterPath="$PROJECT_DIR$/src/main/java/Train/MyRandomForest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Train/Train.java" afterPath="$PROJECT_DIR$/src/main/java/Train/Train.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,8 +76,8 @@
       <file leaf-file-name="MyRandomForest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Train/MyRandomForest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="324" column="9" selection-start-line="324" selection-start-column="9" selection-end-line="324" selection-end-column="9" />
+            <state relative-caret-position="27">
+              <caret line="161" column="29" selection-start-line="161" selection-start-column="29" selection-end-line="161" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,11 +85,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="matrixTrain 5.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrain 5.csv">
+      <file leaf-file-name="matrixTest.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="12177">
+              <caret line="451" column="31" selection-start-line="451" selection-start-column="31" selection-end-line="451" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="matrixTrainO1_7.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrainO1_7.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17577">
+              <caret line="651" column="31" selection-start-line="651" selection-start-column="31" selection-end-line="651" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="matrixTestO1.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTestO1.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12204">
+              <caret line="452" column="17" selection-start-line="452" selection-start-column="17" selection-end-line="452" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="matrixTrainO1_5.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrainO1_5.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12204">
+              <caret line="452" column="61" selection-start-line="452" selection-start-column="17" selection-end-line="452" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -94,48 +128,28 @@
       <file leaf-file-name="MultivariateShapelet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Shapelet/MultivariateShapelet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="4131">
+              <caret line="164" column="23" selection-start-line="164" selection-start-column="23" selection-end-line="164" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shapelet.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataSet/Shapelet/shapelet.csv">
+      <file leaf-file-name="Constant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Constant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3267">
-              <caret line="121" column="153" selection-start-line="121" selection-start-column="153" selection-end-line="121" selection-end-column="153" />
+            <state relative-caret-position="1539">
+              <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="matrixTrainP3_5.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrainP3_5.csv">
+      <file leaf-file-name="Train.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Train/Train.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matrixTestP3_6.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTestP3_6.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3564">
-              <caret line="132" column="1871" selection-start-line="132" selection-start-column="1871" selection-end-line="132" selection-end-column="1871" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matrixTrainP3_6.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrainP3_6.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="247" column="28" selection-start-line="247" selection-start-column="28" selection-end-line="247" selection-end-column="28" />
+            <state relative-caret-position="810">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -194,12 +208,17 @@
         <option value="$PROJECT_DIR$/src/main/java/Predict/RealTimePrediction.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/DBUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/Preprocess/GetSeries.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Utils/Constant.java" />
         <option value="$PROJECT_DIR$/src/main/java/Shapelet/MultivariateShapelet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Train/Train.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/Test.java" />
         <option value="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTestP3_6.csv" />
+        <option value="$PROJECT_DIR$/src/main/java/Train/Train.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utils/Constant.java" />
+        <option value="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTestP3_5.csv" />
+        <option value="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrainP3_6.csv" />
+        <option value="$PROJECT_DIR$/DataSet/ResultMatrix/test.csv" />
+        <option value="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTestO1.csv" />
+        <option value="$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest.csv" />
         <option value="$PROJECT_DIR$/src/main/java/Train/MyRandomForest.java" />
       </list>
     </option>
@@ -334,6 +353,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ActivityRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ActivityRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Train" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -392,38 +437,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Shapelet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ActivityRecognition" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ActivityRecognition" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataSet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="ResultMatrix" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -434,20 +461,20 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\code\Java\Project\ActivityRecognition\DataSet" />
-      <recent name="D:\code\Java\Project\ActivityRecognition\models" />
-      <recent name="D:\code\Java\Project\ActivityRecognition\DataSet\ResultMatrix" />
-      <recent name="D:\code\Java\Project\ActivityRecognition\src\main\java\ShapeletTransform" />
-      <recent name="D:\code\Java\Project\ActivityRecognition\src\main\java\Shapelet" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\Java\Project\ActivityRecognition\DataSet\Shapelet" />
+      <recent name="D:\code\Java\Project\ActivityRecognition\DataSet\DoubleHands" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Shapelet" />
       <recent name="ShapeletTransform" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\code\Java\Project\ActivityRecognition\DataSet\Shapelet" />
-      <recent name="D:\code\Java\Project\ActivityRecognition\DataSet\DoubleHands" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\java\ActivityRecognition\ActivityRecognition\DataSet\ResultMatrix" />
+      <recent name="D:\code\Java\Project\ActivityRecognition\DataSet" />
+      <recent name="D:\code\Java\Project\ActivityRecognition\models" />
+      <recent name="D:\code\Java\Project\ActivityRecognition\DataSet\ResultMatrix" />
+      <recent name="D:\code\Java\Project\ActivityRecognition\src\main\java\ShapeletTransform" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -983,9 +1010,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.MyRandomForest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.FileUtils" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Train" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Train" />
+        <item index="2" class="java.lang.String" itemvalue="Application.FileUtils" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Test" />
         <item index="4" class="java.lang.String" itemvalue="Application.RealTimePrediction" />
       </list>
     </recent_temporary>
@@ -1025,16 +1052,24 @@
       <workItem from="1552612333752" duration="4474000" />
       <workItem from="1552704807819" duration="15366000" />
       <workItem from="1552788629771" duration="4523000" />
-      <workItem from="1552820947192" duration="1651000" />
+      <workItem from="1552820947192" duration="2967000" />
+      <workItem from="1552913403935" duration="2610000" />
+      <workItem from="1552958265574" duration="1194000" />
+      <workItem from="1553085489942" duration="1193000" />
+      <workItem from="1553127279694" duration="16456000" />
+      <workItem from="1553329289251" duration="6352000" />
+      <workItem from="1553390141762" duration="7309000" />
+      <workItem from="1553414104464" duration="5926000" />
+      <workItem from="1553430577168" duration="215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231105000" />
+    <option name="totallyTimeSpent" value="273676000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1042,23 +1077,23 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6558219" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15239726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39554796" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60958904" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21482602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27155825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.025684932" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6438356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31843576" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31678084" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1081,7 +1116,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1090,23 +1125,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DataSet/DoubleHands/hand_test_label.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataSet/DoubleHands/hand_train.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="77" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataSet/Act/0.csv" />
-    <entry file="file://$PROJECT_DIR$/DataSet/Act/8.csv" />
-    <entry file="file://$PROJECT_DIR$/DataSet/Act/5.csv" />
     <entry file="file://$PROJECT_DIR$/DataSet/Act/4.csv" />
     <entry file="file://$PROJECT_DIR$/DataSet/Act/3.csv" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/String.java" />
@@ -1214,7 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="230" column="37" selection-start-line="230" selection-start-column="37" selection-end-line="230" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1225,13 +1242,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7965">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest8.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
@@ -1248,13 +1259,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest3.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7892">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest3.csv" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -1284,16 +1289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Train/Train.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Predict/RealTimePrediction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-355">
@@ -1308,21 +1303,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="51" column="81" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrain.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="84" column="54" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrain.csv" />
     <entry file="jar://$PROJECT_DIR$/libs/weka.jar!/weka/core/Instances.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8214">
@@ -1344,65 +1325,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest.csv">
+    <entry file="file://$PROJECT_DIR$/DataSet/Shapelet/shapelet.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1330">
-          <caret line="84" column="54" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="54" />
+        <state relative-caret-position="3267">
+          <caret line="121" column="153" selection-start-line="121" selection-start-column="153" selection-end-line="121" selection-end-column="153" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTestP3_6.csv">
+    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrainP3_5.csv" />
+    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTestP3_6.csv" />
+    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTestP3_5.csv" />
+    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrainP3_6.csv" />
+    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrain 5.csv" />
+    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/test.csv" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Train/Train.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3564">
-          <caret line="132" column="1871" selection-start-line="132" selection-start-column="1871" selection-end-line="132" selection-end-column="1871" />
+        <state relative-caret-position="810">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Shapelet/MultivariateShapelet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="4131">
+          <caret line="164" column="23" selection-start-line="164" selection-start-column="23" selection-end-line="164" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataSet/Shapelet/shapelet.csv">
+    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrainO1_7.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3267">
-          <caret line="121" column="153" selection-start-line="121" selection-start-column="153" selection-end-line="121" selection-end-column="153" />
+        <state relative-caret-position="17577">
+          <caret line="651" column="31" selection-start-line="651" selection-start-column="31" selection-end-line="651" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrain 5.csv">
+    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTestO1.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="12204">
+          <caret line="452" column="17" selection-start-line="452" selection-start-column="17" selection-end-line="452" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrainP3_5.csv">
+    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrainO1_5.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="9" />
+        <state relative-caret-position="12204">
+          <caret line="452" column="61" selection-start-line="452" selection-start-column="17" selection-end-line="452" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTrainP3_6.csv">
+    <entry file="file://$PROJECT_DIR$/DataSet/ResultMatrix/matrixTest.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="247" column="28" selection-start-line="247" selection-start-column="28" selection-end-line="247" selection-end-column="28" />
+        <state relative-caret-position="12177">
+          <caret line="451" column="31" selection-start-line="451" selection-start-column="31" selection-end-line="451" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Train/MyRandomForest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="324" column="9" selection-start-line="324" selection-start-column="9" selection-end-line="324" selection-end-column="9" />
+        <state relative-caret-position="27">
+          <caret line="161" column="29" selection-start-line="161" selection-start-column="29" selection-end-line="161" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

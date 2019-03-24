@@ -1,4 +1,5 @@
 package Train;
+
 import Preprocess.GetSeries;
 import Shapelet.MultivariateShapelet;
 import Utils.Constant;
@@ -9,6 +10,8 @@ import weka.core.Instances;
 import weka.core.SerializationHelper;
 
 import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 
@@ -76,7 +79,10 @@ public class Train {
         System.out.println(evaluation_forest.toMatrixString());
         System.out.println(evaluation_forest.toClassDetailsString());
 
+
+
         System.out.println("模型生成完毕，并存入到："+Constant.model_path+"/"+userName+".model");
+
         return true;
     }
     public static boolean train(String userName) throws Exception{
@@ -98,8 +104,58 @@ public class Train {
 //        return generateModel(userName);
         return generateModel(userName);
     }
+    //测试weka randomforest分类到底准不准
+    public static void test(){
+        try {
+            String trainMatrix;
+            String testMatrix;
+            trainMatrix = "DataSet/ResultMatrix/matrixTrainP3_6.csv";
+            testMatrix = "DataSet/ResultMatrix/matrixTestP3_6.csv";
+            System.out.println("开始生成模型");
+            FileReader reader = new FileReader(trainMatrix);
+            Instances instances = new Instances(reader);
+            if (instances.classIndex() == -1) {
+                System.out.println("data.numAttributes() = " + instances.numAttributes());
+                instances.setClassIndex(instances.numAttributes() - 1);
+                instances.setClassIndex(instances.numAttributes() - 1);
+            }
+            RandomForest classifier_forest = new RandomForest();
+            classifier_forest.buildClassifier(instances);
+            Evaluation evaluation_forest = new Evaluation(instances);
+            evaluation_forest.crossValidateModel(classifier_forest, instances, 10, new Random(1));
+            System.out.println(evaluation_forest.toSummaryString());
+            System.out.println(evaluation_forest.toMatrixString());
+            System.out.println(evaluation_forest.toClassDetailsString());
+            //预测过程
+            System.out.println("Downstairs,Jogging,Sitting,Standing,Upstairs,Walking");
+            String testLabel[] = {"Downstairs","Jogging" ,"Sitting", "Standing", "Upstairs", "Walking"};
+            String s[] = instances.classAttribute().toString().split("\\{")[1].split("}")[0].split(",");
+            List<String> label = new ArrayList<>();
+            for(String key : s){
+                label.add(key);
+            }
+            FileReader test = new FileReader(testMatrix);
+            Instances testInstances = new Instances(test);
+            if (testInstances.classIndex() == -1){
+                testInstances.setClassIndex(testInstances.numAttributes() - 1);
+            }
+            for(int i = 0;i < testInstances.numInstances(); i++){
+                //System.out.println(testInstances.instance(i));
+                if(i % 10 != 0){
+                    System.out.println("------Predict: " + label.get(new Double(classifier_forest.classifyInstance(testInstances.instance(i))).intValue()));
+                }else{
+                    System.out.println("RealLabel " + testLabel[i/10] + ": ");
+                }
+            }
+            System.out.println("测试样本为： " + testInstances.numInstances());
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
     public static void main(String[] args) throws Exception{
-        boolean flag = train("111") ;
-        System.out.println(flag);
+        //boolean flag = train("111") ;
+        //System.out.println(flag);
+        test();
     }
 }
